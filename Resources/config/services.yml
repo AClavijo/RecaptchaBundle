@@ -1,0 +1,5 @@
+services:
+    ac.recaptcha.form.type:
+        class: AC\Bundle\RecaptchaBundle\Form\Type\RecaptchaType
+        tag:
+            - { name: form.type, alias: ac_recaptcha }
