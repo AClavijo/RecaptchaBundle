@@ -1,6 +1,6 @@
 {% block ac_recaptcha_widget %}
     {% spaceless %}
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+        <script src="{{form.vars.url_api}}" async defer></script>
+        <div class="g-recaptcha" data-sitekey="{{form.vars.public_key}}"></div>
     {% endspaceless %}
 {% endblock %}
