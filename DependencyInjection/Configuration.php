@@ -19,6 +19,7 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->scalarNode('public_key')->isRequired()->end()
                 ->scalarNode('private_key')->isRequired()->end()
+                ->scalarNode('url_api')->isRequired()->end()
             ->end()
         ;
 

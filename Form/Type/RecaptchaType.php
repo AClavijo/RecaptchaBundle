@@ -5,6 +5,7 @@ namespace AC\Bundle\RecaptchaBundle\Form\Type;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormView;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -44,6 +45,14 @@ class RecaptchaType extends AbstractType
             'publicKey' => $this->publicKey,
             'url_api' => $this->urlApi,
         );
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    {
+        
     }
 
     /**
