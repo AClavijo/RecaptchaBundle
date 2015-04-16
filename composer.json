@@ -1,0 +1,22 @@
+{
+    "name": "Aclavijo/recaptcha-bundle",
+    "description": "This bundle provides easy reCAPTCHA form field integration",
+    "keywords": ["recaptcha"],
+    "homepage": "https://github.com/excelwebzone/EWZRecaptchaBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antoine Clavijo",
+            "email": "antoine.clavijo@gmail.com",
+            "homepage": "https://github.com/AClavijo"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "2.*"
+    },
+    "autoload": {
+        "psr-0": { "AC\\Bundle\\RecaptchaBundle\\": "" }
+    },
+    "target-dir": "AC/Bundle/RecaptchaBundle"
+}
