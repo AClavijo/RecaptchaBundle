@@ -17,6 +17,14 @@ composer.json
 }
 ```
 
+Add it into AppKernel.php:
+
+```php
+    ...
+    new AC\RecaptchaBundle\ACRecaptchaBundle(),
+    
+```
+
 #Congifuration
 ```
 config.yml
