@@ -31,7 +31,7 @@ class ACRecaptchaExtension extends Extension
     }
 
     /**
-     * Registers the form widget.
+     * Registers into template engine (twig|php) the form ac_repatcha_widget.
      */
     protected function registerWidget(ContainerBuilder $container)
     {
