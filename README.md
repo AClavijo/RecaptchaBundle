@@ -31,4 +31,5 @@ config.yml
 ac_repatcha:
     public_key:
     private_key:
+    url_api:
 ```

@@ -1,6 +1,6 @@
 <?php
 
-namespace AC\Bundle\RecaptchaBundle\DependencyInjection
+namespace AC\Bundle\RecaptchaBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
