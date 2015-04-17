@@ -1,6 +1,6 @@
 <?php
 
-namespace AC\Bundle\Recaptcha\DependencyInjection;
+namespace AC\Bundle\RecaptchaBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
