@@ -21,7 +21,7 @@ Add it into AppKernel.php:
 
 ```php
     ...
-    new AC\RecaptchaBundle\ACRecaptchaBundle(),
+    new AC\Bundle\RecaptchaBundle\ACRecaptchaBundle(),
     
 ```
 
