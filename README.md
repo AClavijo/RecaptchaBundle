@@ -29,7 +29,15 @@ Add it into AppKernel.php:
 ```
 config.yml
 ac_repatcha:
-    public_key:
-    private_key:
-    url_api:
+    public_key: %api_public_key%
+    private_key: %api_private_key%
+    url_api: %js_api_url%
+```
+
+#How to use it
+
+```php
+    $builder->add('captcha', 'ac_recaptcha', array(
+        'mapped' => false,
+    ));
 ```
