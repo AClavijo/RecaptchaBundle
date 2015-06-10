@@ -13,6 +13,6 @@ class Recaptcha extends Constraints
 
     public function validateBy()
     {
-        return get_class($this).'Validator';
+        return 'ac_recaptcha_validator';
     }
 }
