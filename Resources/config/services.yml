@@ -9,4 +9,4 @@ services:
         class: AC\Bundle\RecaptchaBundle\Validator\Constraints\RecaptchaValidator.php
         arguments: ["@service_container"]
         tags:
-    	    - { name: validator.constraint_validator, alias: ac_recaptcha_validator }
+            - { name: validator.constraint_validator, alias: ac_recaptcha_validator }
