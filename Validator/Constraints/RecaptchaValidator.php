@@ -1,6 +1,6 @@
 <?php
 
-namespace AC\Bundle\RecaptchaBundle\Constraints;
+namespace AC\Bundle\RecaptchaBundle\Validator\Constraints;
 
 
 use Symfony\Component\Validator\Constraint;
