@@ -23,6 +23,7 @@ class RecaptchaValidator extends ConstraintValidator
 
     public function validate($value, Constraint $constraint)
     {
+    	
     	$args = array(
     		'secret' => $this->container->getParameter('ac_recaptcha.private_key'),
     		'response' => $this->container->get('request')->request->get('g-recaptcha-response'),
