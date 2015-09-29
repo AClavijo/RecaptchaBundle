@@ -25,7 +25,7 @@ Add it into AppKernel.php:
     
 ```
 
-#Congifuration
+#Configuration
 ```
 config.yml
 ac_repatcha:
@@ -40,4 +40,19 @@ ac_repatcha:
     $builder->add('captcha', 'ac_recaptcha', array(
         'mapped' => false,
     ));
+```
+adding constraint to server side validation
+```php
+    use AC\Bundle\RecaptchaBundle\Validator\Constraints\Recaptcha;
+
+    ...
+
+    $builder->add('captcha', 'ac_recaptcha', array(
+        'mapped' => false,
+        'constraints' => array(
+                new Recaptcha(),
+        ),
+    ));
+
+    ...
 ```
