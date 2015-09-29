@@ -11,7 +11,7 @@ class Recaptcha extends Constraints
 {
     public $message = "Erreur lors de la validation du recaptcha";
 
-    public function validateBy()
+    public function validatedBy()
     {
         return get_class($this).'Validator';
     }
