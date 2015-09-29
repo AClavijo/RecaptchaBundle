@@ -1,18 +1,18 @@
 <?php
 
-namespace AC\Bundle\RecaptchaBundle\Constraints;
+namespace AC\Bundle\RecaptchaBundle\Validator\Constraints;
 
 use Symfony\Component\Validator\Constraint;
 
 /**
  * @Annotation
  */
-class Recaptcha extends Constraints
+class Recaptcha extends Constraint
 {
     public $message = "Erreur lors de la validation du recaptcha";
 
     public function validatedBy()
     {
-        return get_class($this).'Validator';
+        return 'ac_recaptcha_validator';
     }
 }

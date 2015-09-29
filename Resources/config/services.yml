@@ -4,3 +4,9 @@ services:
         arguments: ["@service_container"]
         tags:
             - { name: form.type, alias: ac_recaptcha }
+
+    ac.recaptcha.validator:
+        class: AC\Bundle\RecaptchaBundle\Validator\Constraints\RecaptchaValidator
+        arguments: ["@service_container"]
+        tags:
+            - { name: validator.constraint_validator, alias: ac_recaptcha_validator }

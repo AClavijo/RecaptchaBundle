@@ -12,6 +12,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  */
 class RecaptchaValidator extends ConstraintValidator
 {
+
 	const RECAPTCHA_VERIFY_URL = 'https://www.google.com/recaptcha/api/siteverify';
 
 	protected $container;
